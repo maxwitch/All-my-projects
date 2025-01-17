@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="yandex-verification" content="2c2f15f5d48196a8" />
+    <title>Учебный проект сайт Sedona</title>
+    <link rel="stylesheet" href="style-hotels.css">
+            <!-- Yandex.Metrika counter -->
+            <script type="text/javascript" >
+              (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};
+              m[i].l=1*new Date();
+              for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}
+              k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})
+              (window, document, "script", "https://mc.yandex.ru/metrika/tag.js", "ym");
+
+              ym(93704858, "init", {
+                  clickmap:true,
+                  trackLinks:true,
+                  accurateTrackBounce:true
+              });
+            </script>
+            <noscript><div><img src="https://mc.yandex.ru/watch/93704858" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+            <!-- /Yandex.Metrika counter -->
+
+  </head>
+  <body>
+    <header class="header_flex">
+      <img src="img/logo.svg" alt="logo" id="header_logo" width="139px" height="70px">
+      <nav class="nav_nav"> <!-- Меню в шапке -->
+        <ul class="navigation"> <!-- Навигация -->
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="#top">О Седоне</a></li>
+          <li><a href="#top">Гостиницы</a></li>
+        </ul>
+      </nav>
+      <form class="second-nav"> 
+        <input type="search" placeholder="Поиск:">
+        <input type="button" name='favorites' value="Избранное">
+        <input type="button" name='iwanthere!' value="Хочу сюда!">
+      </form>
+    </header>
+    <main>
+        <aside class="filter"> <!--Фильтр-->
+            
+            <div class="filter-top">
+                <h1 class="Main_header">Гостиницы Седоны</h1>
+                <img src="img/hotels/home 1.svg" alt="домик" width="12px" height="12px"> <img src="img/hotels/arrow.svg" alt="стрелка" width="12px" height="12px"> <a href='#'>Гостиницы</a>
+            </div>
+            <fieldset class="infrastructers">
+                <legend><h3>Инфраструктура:</h3></legend>
+                    <label><input type="checkbox" checked name="pool">
+                      <span>Бассейн</span>
+                    </label>
+                    <label><input type="checkbox" checked name="parking">
+                      <span>Парковка</span>
+                    </label>
+                    <label><input type="checkbox" name="wi-fi">
+                      <span>Wi-Fi</span>
+                    </label>
+            </fieldset>
+            <fieldset class="type-of-house">
+              <legend><h3>Тип жилья:</h3></legend>
+                  <label><input type="checkbox" checked name="pool">
+                    <span>Гостиница</span>
+                  </label>
+                  <label><input type="checkbox" checked name="parking">
+                    <span>Мотель</span>
+                  </label>
+                  <label><input type="checkbox" name="wi-fi">
+                    <span>Аппартаменты</span>
+                  </label>
+          </fieldset>
+        </aside>
+        <div class="sort-block"> <!-- Сортировка карточек -->
+          <p class= 'head-sort'>НАЙДЕНО ГОСТИНИЦ: 38</p>
+          <select name="Sort" class="sort-form">
+            <option атрибуты>Сначала дешёвые</option>
+          </select>
+        <input type="button" name="view-1" class="display_view_button-1" value="1">
+        <input type="button" name="view-1" class="display_view_button-2" value="2">
+        <input type="button" name="view-1" class="display_view_button-3" value="3">
+        </div> <!-- Сортировка карточек -->
+        <section class="Catalog"><!-- Каталог -->
+          <div class="Card"> <!-- Карточка №1 -->
+            <img src="img/hotels/hotel-1.jpg" alt="Amara resort photo">
+            <h4>Amara Resort & Spa</h4>
+            <div class="type-in-card">
+              <p>Гостиница</p>
+              <p>От 4000 &#x20bd;</p>
+            </div>
+            <div class="card-buttons">
+              <a href="#" class="first_a">Подробнее</a>
+              <a href="#">в избранное</a>
+            </div>
+            <div class="raiting_container">
+              <div class="star-container">
+                <img src="img/hotels/star.png" width="18px" height="17px">
+                <img src="img/hotels/star.png" width="18px" height="17px">
+                <img src="img/hotels/star.png" width="18px" height="17px">
+                <img src="img/hotels/star.png" width="18px" height="17px">
+              </div>
+              <p class="raiting">Рейтинг: 8,5</p>
+            </div>
+          </div><!-- Карточка №1 -->
+          <div class="Card"> <!-- Карточка №2 -->
+            <img src="img/hotels/hotel-2.jpg" alt="Desert Quail Inn Photo">
+            <h4>Desert Quail Inn</h4>
+            <div class="type-in-card">
+              <p>Гостиница</p>
+              <p>От 3000 &#x20bd;</p>
+            </div>
+            <div class="card-buttons">
+              <a href="#">Подробнее</a>
+              <a href="#">в избранное</a>
+            </div>
+            <div class="raiting_container">
+              <div class="star-container">
+                <img src="img/hotels/star.png" width="18px" height="17px">
+                <img src="img/hotels/star.png" width="18px" height="17px">
+                <img src="img/hotels/star.png" width="18px" height="17px">
+                
+              </div>
+              <p class="raiting">Рейтинг: 8,9</p>
+            </div>
+          </div><!-- Карточка №2 -->
+          <div class="Card"> <!-- Карточка №3 -->
+            <img src="img/hotels/hotel-3.jpg" alt="Villas at Poco Diablo Photo">
+            <h4>Villas at Poco Diablo</h4>
+            <div class="type-in-card">
+              <p>Гостиница</p>
+              <p>От 2000 &#x20bd;</p>
+            </div>
+            <div class="card-buttons">
+              <a href="#">Подробнее</a>
+              <a href="#">в избранное</a>
+            </div>
+            <div class="raiting_container">
+              <div class="star-container">
+                <img src="img/hotels/star.png" width="18px" height="17px">
+                <img src="img/hotels/star.png" width="18px" height="17px">
+                
+              </div>
+              <p class="raiting">Рейтинг: 9,2</p>
+            </div>
+          </div><!-- Карточка №3 -->
+          <div class="Card"> <!-- Карточка №4 -->
+            <img src="img/hotels/hotel-4.jpg" alt="GreenTree Inn Photo">
+            <h4>GreenTree Inn</h4>
+            <div class="type-in-card">
+              <p>Гостиница</p>
+              <p>От 3000 &#x20bd;</p>
+            </div>
+            <div class="card-buttons">
+              <a href="#">Подробнее</a>
+              <a href="#">в избранное</a>
+            </div>
+            <div class="raiting_container">
+              <div class="star-container">
+                <img src="img/hotels/star.png" width="18px" height="17px">
+                <img src="img/hotels/star.png" width="18px" height="17px">
+                
+              </div>
+              <p class="raiting">Рейтинг: 9,2</p>
+            </div>
+          </div><!-- Карточка №4 -->
+        </section><!-- Конец каталога -->
+        <hr>
+        <button type="button">Загрузить ещё</button>
+        <hr>
+
+        <article class="E-mail-hotels-page"><!-- Подписка на рассылку -->
+            <p class="Big_text_title">подпишитесь на рассылку</p>
+            <p class="Description_block">Только полезная информация и никакого спама,<br>честное бойскаутское!</p>
+            <form action="https://echo.htmlacademy.ru/" class="podpiska">
+              <input type="email" name="email-confirm" value="Ваш e-mail"><!--
+           --><input type="submit" name="confirm-yes" value="подписаться">
+            </form>
+          </article>
+    </main>
+    <footer class="main-footer"> <!-- Футер, контакты, ссылки на соц сети, лого -->
+        <ul class="social-list_footer">
+          <li style="display: inline-block;"><img src="img/twitter.svg" alt="twitter"></li>
+          <li style="display: inline-block;"><img src="img/facebook.svg" alt="facebook"></li>
+          <li style="display: inline-block;"><img src="img/youtube.svg" alt="youtube"></li>
+        </ul>
+        <address  style="display: inline-block;">
+          <p class="phone">+7 (812) 812-12-12</p>
+        </address>
+        <img src="img/htmlacademy.svg" alt="htmlacademy logo"  style="display: inline-block;" width="114.9px" height="32.9px">
+      </footer>
+    </body>
+  </html>

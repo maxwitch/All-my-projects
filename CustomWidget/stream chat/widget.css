@@ -1,0 +1,202 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css');
+@import url('https://fonts.googleapis.com/css?family={{fontName}}');
+
+* {
+    font-family: '{{fontName}}', sans-serif;
+    color: {{fontColor}};
+    overflow: hidden;
+    font-weight: {{fontWeight}};
+    text-shadow:{textShadow};
+}
+
+.main-container{
+   
+    border-radius: 25px 25px 25px 25px;
+    display:{{alignMessages}};
+    background-color: {{backgroundColor}};
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+    align-content: flex-start;
+    height:98%;
+    margin-bottom:10px;
+    box-sizing: border-box;
+    
+}
+
+.message-row{
+    flex: 0 0 auto;
+    display: flex;
+    flex-direction: column;
+    width:94%;
+    margin-bottom:5px;
+    /*background-color:{{backgroundColor}};*/
+    padding:5px;
+    vertical-align: baseline;
+    /*
+    border-left: dashed 3px;
+    border-image: linear-gradient(pink, purple) 27;
+    */
+    font-family: Arial, Helvetica, sans-serif;
+    color: black;
+    overflow: visible;
+    font-weight: 400;
+    position: relative;
+    margin-left: 4%;
+    padding-left: 0px;
+    /*
+    animation-duration: 3s;
+    animation-name: slidein; */
+}
+
+.badge{
+    display:{{displayBadges}};
+    height:{{fontSize}}px;
+}
+
+.user-box{
+    display: flex;
+    background-color: #ae8cf8;
+    max-width: 80%;
+    padding: 5px 25px;
+    border-radius: 30px 30px 30px 0px;
+    margin-right: auto;
+    margin-bottom: 5px;
+    margin-left: 15px;
+    color: white;
+    font-weight: 600; 
+    text-shadow: none;
+    margin-left: 7%;
+    z-index: 10;
+    animation-name: animForUserBox;
+    animation-duration: 1s;
+    font-size:{{fontSize}}px;
+}
+
+.user-box > span{
+    display: inline;
+    vertical-align: bottom;
+    padding: 3px 15px;
+    background-color: white;
+    border-radius: 25px 25px 25px 25px;
+    font-size:{{fontSize}}px;
+}
+
+.user-message{
+    display: inline;
+    /*margin-right: auto;*/
+    background: linear-gradient(to right, #dbcdfe, #f9d3f4);
+    max-width: 85%;
+    padding: 10px 25px;
+    border-radius: 0px 30px 30px 30px;
+    border: 2px solid  #ae8cf8;
+    color: black;
+    text-shadow: none;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 5%;
+    z-index: 1;
+    /* @keyframes duration | timing-function | delay | name */
+    animation: 0.75s linear animShowMessage;
+    font-size:{{fontSize}}px;
+}
+.user-message p {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+    color: black;
+    animation-name: animShowMessageInCase;
+    animation-timing-function: linear;
+    animation-duration: 0.75s;
+    font-size:{{fontSize}}px;
+    text-shadow: none;
+}
+
+.emote{
+    height: {emoteSize}px;
+    vertical-align: middle;
+    background-repeat:no-repeat;
+}
+
+.action{
+    font-style: italic;
+}
+
+.flower-img {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 0px;
+    left: -25px;
+    animation-name: rotateFlower;
+    animation-timing-function: linear;
+    animation-duration: 0.75s; 
+}
+
+.hearts-img {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: -27px;
+    flex-shrink: 0;
+}
+
+p {
+    display: inline;
+    margin: 0;
+    margin-right: 16px;
+    font-weight: 800; 
+    font-size:{{fontSize}}px;
+}
+
+.div-for-borderflower {
+    display: flex;
+    border-left: 3px solid #e8d4ef;
+    overflow: visible;
+}
+
+@keyframes rotateFlower {
+    from {
+        transform: rotate(0);
+      
+    }
+    to {
+        transform: rotate(360deg);
+      
+    }
+  } 
+  
+@keyframes animShowMessage {
+  from {
+        display: block;
+        max-width: 0%;
+        max-height: 0%;
+        padding: 0;
+  }
+
+  to {
+        display: block;
+        max-width: 100%;
+        max-height: 100%;
+        padding: 10px 25px;
+  }
+} 
+
+@keyframes animShowMessageInCase {
+    from {
+        font-size: 0px;
+        opacity: 0;
+    }
+    to {
+        font-size:{{fontSize}}px;
+        opacity: 1;
+    }
+  } 
+  
+@keyframes animForUserBox {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+} 

@@ -1,0 +1,563 @@
+/*------------------------------------------ШРИФТЫ------------------------------------------------*/
+@font-face {
+    font-family: "OpenSans";
+    src: local("OpenSans-Regular"),
+      url("fonts/OpenSans-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "OpenSans";
+    src: local("OpenSans-Bold"),
+      url("fonts/OpenSans-Bold.ttf");
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: "FontAwesome";
+    src: local("FontAwesome-regular"),
+      url("fonts/fontawesome-webfont.woff");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Myanmar";
+    src: local("Myanmar-regular"),
+      url("fonts/myanmar-text-bold.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Oxygen-regular";
+    src: local("Oxygen-regular"),
+      url("fonts/Oxygen-Regular.ttf");
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: "Oxygen-Bold";
+    src: local("Oxygen-Bold"),
+      url("fonts/Oxygen-Bold.ttf");
+    font-weight: 700;
+}
+
+body {
+  margin: 0 auto;
+  width: 1500px;
+  
+}
+
+header {
+  position: fixed;
+  width: 1500px;
+  z-index: 1500;
+  top: 0%;
+}
+/*------------------------------------------ШРИФТЫ------------------------------------------------*/
+/*------------------------------------------Шапка------------------------------------------------*/
+.background-contacts {
+  border: 1px solid #21394f;
+  background-color: #1e2735;
+}
+.contacts-block{
+  display: flex;
+  max-width: 1000px;
+  height: 28px;
+  
+  align-items: center;
+  margin: 0 auto;
+  
+}
+
+.contacts-container {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  color: white;
+  gap: 20px;
+}
+.contacts-container li{
+  list-style: none;
+}
+.social-links {
+  display: flex;
+  justify-self: flex-end;
+  margin-left: auto;
+  
+}
+
+.opensans {
+  font-family: 'OpenSans', sans-serif;
+  font-style: normal;
+}
+address ul>li {
+  font-family: FontAwesome;
+  font-style: normal;
+  color: #788293;
+  font-size: 12px;
+}
+
+.social-links ul {
+  display: flex; 
+  margin: 0;
+  padding: 0;
+  align-content: center;
+}
+
+.social-links ul>li>img {
+  width: 22px;
+  height: 22px;
+  margin: 0px;
+  margin-right: 8px;
+}
+.social-links ul>li>img:nth-last-of-type(img) {
+  margin-right: 0px;
+}
+
+.social-links ul>li {
+  list-style: none;
+}
+/*------------------------------------------МЕНЮ------------------------------------------------*/
+.main-navigation {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1000px;
+  align-items: center;
+  height: 100px;
+  
+}
+.background-main-navigation {
+  background-color: #232f46;
+}
+.main-navigation ul {
+  display: flex;
+  align-items: center;
+  margin:0;
+  padding: 0;
+}
+.main-navigation ul li {
+  margin-left: 0px;
+  margin-right: 25px;
+  color: white;
+  font-size: 14px;
+  font-family: OpenSans;
+  list-style: none;
+}
+.button_head {
+  padding: 15px;
+  background-color: #82b440;
+  border-radius: 10px;
+  box-shadow: 0 5px #4d731b;
+  border: none;
+  color: white;
+  font-family: Oxygen;
+  
+}
+
+/*------------------------------------------МЕНЮ------------------------------------------------*/
+
+/*------------------------------------------Шапка------------------------------------------------*/
+/*------------------------------------------Основной баннер------------------------------------------------*/
+main {
+  margin-top: 128px;
+}
+.Main-banner {
+  height: 510px;
+  background: 
+              url(img/main_banner/city-left.png) no-repeat 0px 100%/68% 356px,
+              url(img/main_banner/city-right.png) no-repeat 100% 100%/32% 356px,
+              url(img/main_banner/oblaka.png) no-repeat 60% -6%/95% 129px,
+              url(img/main_banner/Layer_44.png) no-repeat 50%/100% 100%;
+  background-color: #0bc2cf;
+  background-blend-mode: normal;
+  overflow-y:visible;
+  
+  
+}
+.headest_container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 600px;
+  position: relative;
+  left: 780px;
+  top: 200px;
+  overflow-x: visible ;
+}
+
+.Main-banner h1 {
+  font-family: Myanmar, bold;
+  color: white;
+  font-size: 60px;
+  line-height: 1.0;
+  text-align: left;
+  margin: 0;
+  padding: 0;
+}
+
+.Main-banner span:nth-of-type(1) {
+  font-size: 48px;
+}
+.nd-span {
+  font-size: 40px !important;
+  color: white;
+  font-family: OpenSans;
+  text-shadow: 1px 3px 3px rgba(0, 0, 0, 0.2);
+  margin-top: -20px;
+}
+.green {
+  padding: 10px 50px;
+  background-color: #82b440;
+  border-radius: 10px;
+  box-shadow: 0 5px #4d731b;
+  border: none;
+  color: white;
+  font-family: Oxygen;
+  text-transform: uppercase;
+  font-size: 18px;
+}
+
+/*------------------------------------------КАРТОЧКИ УСЛУГ------------------------------------------------*/
+.Services {
+  display: flex;
+  justify-content: center;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: stretch;
+  width: 200px;
+  height: 291px;
+  padding: 45px 25px;
+  padding-bottom: 64px;
+  text-align: justify;
+  z-index: -100;
+}
+.card img {
+  justify-self: center;
+  align-self: center;
+  max-width: 137px;
+  max-height: 137px;
+}
+.card p {
+  margin: 0;
+  font-family: OpenSans, normal;
+  color: white;
+  font-size: 14px;
+}
+.card h3 {
+  font-family: OpenSans, Bold;
+  color: white;
+  font-size: 20px;
+  margin: 18px 0;
+}
+.Services div:first-of-type {
+  flex-grow: 1;
+  background-color: #00becc;
+}
+
+.Services div:last-of-type {
+  flex-grow: 1;
+  background-color: #ff7f66;
+}
+.aquamarin {
+  background-color: #00becc;
+}
+.blue {
+  background-color: #1679bf;
+}
+.purple {
+  background-color: #7f3498;
+}
+.pink {
+  background-color: #ff7f66;
+}
+
+/*------------------------------------------БЛОК ПОРТФОЛИО------------------------------------------------*/
+.Portfolio {
+  width: 100%;
+  height: 610px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  background:       url(img/portfolio/Layer51.png) no-repeat,
+                    url(img/portfolio/Layer66.png) no-repeat 50% 100%;
+                    
+  background-blend-mode: soft-light, normal;
+  z-index: 2;
+  background-color: #de513f;
+}
+
+.Portfolio h2 {
+  margin: 42px 0;
+  font-family: Oxygen-regular;
+  font-weight: 400;
+  font-size: 36px;
+  color: white;
+}
+.bold {
+  font-family: Oxygen-Bold;
+  font-weight: 700;
+  
+}
+.cards-portfolio {
+  margin: 0 auto;
+  max-width: 1014px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+  margin-bottom: auto;
+}
+
+.pagg_group {
+  justify-self:flex-end;
+  margin-bottom: 15px;
+  display: flex;
+  justify-content: center;
+}
+/*------------------------------------------ОТЗЫВЫ------------------------------------------------*/
+.comments-section {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  height: 376px;
+  align-items: center;
+}
+
+.note {
+  display: flex;
+  height: 243px;
+  padding: 0px 18px;
+}
+
+.note p{
+  font-family: OpenSans, normal;
+  text-align: justify;
+  margin: 18px 0px;
+  color: white;
+  font-size: 14px;
+  font-weight: 10;
+  line-height: 1.2;
+}
+.block-autor{
+  align-self: center;
+  margin-left: 50px;
+  margin-top: -15px;
+}
+
+
+.note-name {
+  font-family: Oxygen-regular;
+  align-self: center;
+  margin: 0;
+  font-weight: 600;
+}
+.note-fill {
+  font-family: Oxygen-regular;
+  color: #a9a9a9;
+  align-self: center;
+  margin: 0;
+}
+
+.comment {
+  max-width: 232px;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.blue-color{
+  background: url(img/notes/blue.png) no-repeat 100% 100%;
+}
+.red-color{
+  background: url(img/notes/red.png) no-repeat 100% 100%;
+}
+/*------------------------------------------Пост твиттера------------------------------------------------*/
+
+.twitter-post {
+  display: flex;
+  justify-content: center;
+  background: url(img/twitter_post/Layer\ 60.png);
+  background-color: #1679bf;
+  height: 192px;
+  align-items: center;
+}
+.twitter-post a{
+  align-self: center;
+  padding: 10px 15px;
+  background-color: #de443b;
+  font-family: OpenSans, normal;
+  font-size: 16.84px;
+  color: white;
+}
+.twitter-text {
+  display: flex;
+  flex-wrap: wrap;
+  font-family: Oxygen-regular;
+  color: white;
+  font-size: 24px;
+  width: 530px;
+  margin-right: 50px;
+}
+
+.twitter-icon {
+  font-family: FontAwesome;
+  color: #35aad8;
+  font-size: 54.75px;
+  margin: 0 30px;
+}
+/*------------------------------------------Футер------------------------------------------------*/
+
+footer {
+  height: 511px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  background: url(img/footer/background-footer.png) no-repeat 50% 50%/100%;
+}
+
+.social {
+  background: url(img/social_ico/Rectangle_social.png) no-repeat 50% 100%/530px 3px;
+  width: 530px;
+  padding-top: 35px;
+  padding-bottom: 18px;
+  margin-bottom: 55px;
+}
+
+.social_img{
+  max-width: 74px;
+  max-height: 74px;
+
+}
+
+.social ul {
+  display: flex;
+  gap: 50px;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+}
+.social li {
+  list-style: none;
+}
+
+
+.main-footer {
+  display: flex;
+  gap: 80px;
+  height: 265px;
+  background: url(img/footer/background-footer2.png) no-repeat 0% 100%/1033px 3px;
+
+}
+
+.signup-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.signup-form form{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.block-footer {
+  display: flex;
+  flex-direction: column;
+  width: 302px;
+}
+
+.end-footer {
+  display: flex;
+  justify-content: flex-start;
+  width: 1032px;
+}
+.end-footer p{
+  padding-left: 10px;
+  font-family: OpenSans, normal;
+  font-size: 14px;
+  color: white;
+  margin-right: auto;
+}
+
+.submit-form-button {
+  align-self: flex-start;
+  padding: 10px 40px;
+  background-color: #de443b;
+  font-family: OpenSans, normal;
+  font-size: 16.84px;
+  color: white;
+  border: none;
+}
+
+.footer-headest {
+  font-family: OpenSans, normal;
+  color: white;
+  text-transform: uppercase;
+  font-size: 20px;
+  font-weight: 400px;
+  margin-top: 0;
+  margin-bottom: 12px;
+  
+}
+
+.headest-container-footer-1 {
+  background: url(img/social_ico/Rectangle_social.png) no-repeat 50% 100%/530px 3px;
+}
+
+.block-footer p{
+  margin-bottom: 0;
+  font-size: 14px;
+  font-family: OpenSans, normal;
+  color: white
+}
+
+.block-footer ul {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding-left: 0;
+  margin-right: 15px;
+  list-style: '>';
+  font-size: 14px;
+  font-family: OpenSans, normal;
+  color: white
+}
+
+.block-footer li {
+  padding-left: 15px;
+}
+
+.signup-form form{
+  margin-top: 10px;
+}
+
+.end-footer ul {
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  margin:0;
+  padding: 0;
+}
+.end-footer ul li {
+  margin-left: 0px;
+  color: white;
+  font-size: 12px;
+  font-family: OpenSans;
+  list-style: none;
+}
+
+.form-login {
+  width: 246px;
+  height: 40px;
+}
+
+.end-footer ul li:last-of-type {
+  padding-right: 5px;
+}

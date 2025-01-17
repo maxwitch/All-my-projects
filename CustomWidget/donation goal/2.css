@@ -1,0 +1,87 @@
+* {
+    font-family: '{{fontName}}', sans-serif;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.meter {
+    min-width: 98%;
+    height: 33vh; 
+    z-index:-1;
+    border: solid 4px #ae8cf8;
+    border-radius: 35px 35px 35px 35px;
+    box-shadow: inset 0px 0px 0px 3px #473764;
+    padding: 3px;
+    background: rgb(231 224 224);
+}
+.meter > span {
+    display: block;
+    position: relative;
+    margin: 5px;
+    height: 82%;
+    border-radius: 35px 35px 35px 35px;
+    background-image: linear-gradient(to right, {{barColor1}}, {{barColor2}});
+    background-color: {{barColor1}};
+    box-shadow:
+        inset 0 2px 9px  rgba(255,255,255,0.3),
+        inset 0 -2px 6px rgba(0,0,0,0.4);
+    overflow: hidden;
+}
+.legend {
+    /* position: absolute;
+    top: 50%;
+    left: 50%; */
+    width: 100%;
+    /*transform: translate(-50%,-50%);*/
+    font-size:{{labelSize}}px;
+    color:{{labelColor}};
+    text-align:center;
+    font-weight:1200;
+    -webkit-text-stroke-width: {{labelStroke}}px;
+    -webkit-text-stroke-color: black;
+}
+
+.widgetName {
+    display: block;
+    background-color: #ae8cf8;
+    color: white;
+    text-transform: uppercase;
+    max-width: 80%;
+    padding: 10px 25px;
+    border-radius: 30px 30px 30px 0px;
+    margin-right: auto;
+    margin-left: 5%;
+    font-weight: 800; 
+    text-shadow: none;
+    text-align: center;
+    vertical-align: middle;
+    font-size:{{labelSize}}px;
+}
+.widgetName p {
+    margin: 0;
+    font-size: {{labelSize}}px;
+}
+
+.widgetData {
+    display: block;
+    background-color: #ae8cf8;
+    color: white;
+    text-transform: uppercase;
+    max-width: 80%;
+    padding: 5px 25px;
+    border-radius: 0px 30px 30px 30px;
+    margin-left: auto;
+    margin-right: 3%;
+    margin-bottom: ;
+    font-weight: 800; 
+    text-shadow: none;
+    text-align: center;
+    vertical-align: middle;
+    margin-top: -3%;
+    z-index: 10;
+    font-size:{{labelSize}}px;
+}
+
