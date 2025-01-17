@@ -1,0 +1,219 @@
+body {
+    max-width: 1900px;
+    width: 100%; 
+    margin: 0 auto;
+}
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:     url(img/волна.svg) no-repeat 50% 100%,
+                    url(img/Смартфон.png) no-repeat 82% 100%/628px 70%,
+                    url(img/фон.jpg) no-repeat;
+    max-height: 1000px;
+    background-color: white;
+    max-width: 100%;
+    height: 1000px;
+}
+
+.main-headest-container {
+    display: flex;
+    margin-top: 30px;
+    justify-self: center;
+    align-self: center;
+    max-height: auto;
+    max-width: 100%;
+    
+}
+.main-headest-container-element {
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+}
+
+.main-banner {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    margin-top: 100px;
+    margin-left: 20%;
+    align-self: flex-start;
+    max-width: 35%;
+}
+
+.main-banner h2 {
+    color: white;
+    font-size: 48px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    max-width: 100%;
+    margin-top: 0;
+}
+.main-banner p {
+    color: white;
+    font-size: 48px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 46px;
+    max-width: 100%;
+    margin: 0;
+
+}
+
+.main-banner input {
+    margin-top: 50px;
+    padding: 25px 60px;
+    font-size: 24px;
+    text-transform: uppercase;
+    background-color: red;
+    border-radius: 35px;
+    border: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.main-banner input:active {
+    background-color: darkred;
+}
+
+.main-form {
+    margin: 0 auto;
+    margin-top: 25px;
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    
+
+}
+
+.main-form h3 {
+    color: white;
+    font-size: 36px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 60px;
+}
+.main-form-image-1 {
+    position: relative;
+    top: 1015px;
+    left: 480px;
+    z-index: 1;
+    display: none;
+    
+}
+.main-form-image-2 {
+    position: relative;
+    top: 1300px;
+    left: 1180px;
+    z-index: 1;
+    display: none;
+    
+}
+.main-form-container{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    height: 440px;
+    background-color: #89c0d4;
+}
+
+.main-form-container p {
+    color: white;
+    font-size: 24px;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 100px;
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+
+.main-form-container-inputElement-phoneNumber {
+    width: 600px;
+    height: 45px;
+    border-radius: 7px;
+    border: none;
+    align-self: center;
+    box-shadow: 5px 5px 5px gray;
+    font-size: 24px;
+    
+} 
+
+.main-form-container-inputElement-submitButton {
+    align-self: center;
+    width: 370px;
+    margin-top: 40px;
+    padding: 15px 60px;
+    font-size: 24px;
+    text-transform: uppercase;
+    background-color: red;
+    border-radius: 35px;
+    border: none;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.main-form-container-inputElement-submitButton:active {
+    background-color: darkred;
+}
+
+.checkbox-confirm-agree {
+    margin-left: 100px;
+    margin-top: 15px;
+    width: 18px;
+    height: 18px;
+}
+.main-form-container-labelForm {
+    display: flex;
+}
+.info-block {
+    width: 720px;
+    font-size: 16px;
+    text-align: justify;
+}
+
+.main-form a {
+    width: 720px;
+    font-size: 16px;
+}
+
+.main-form-container-labelForm p {
+    margin: 0;
+    justify-self: flex-end;
+    align-self: flex-end;
+    color: black;
+    font-size: 16px;
+    
+}
+
+.main-features {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+
+.main-features-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-content: center;
+    align-items: center;
+    margin-top: 55px;
+}
+
+.main-features-container p {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 18px;
+}
+
+.main-features-container img {
+    width: 101px;
+}
